@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    %meta{charset: "utf-8"}
+    %title= current_page.data.title || "page"
+    = stylesheet_link_tag :site
+    = javascript_include_tag :all
+  %body
+    = yield
